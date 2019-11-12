@@ -1,0 +1,129 @@
+*{
+	box-sizing : border-box;
+}
+body{
+
+  background-image: url('family.jpg');
+  background-color: rgba(1,1,1,0.9);
+ }
+
+#app h1{
+	font-family: 'Anton', sans-serif;
+
+}
+#app{
+	z-index: 2;
+	margin-top: 10px;
+	width:70%;
+	margin-left: 15%;
+	text-align: center;
+	justify-content: center;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	font-family: 'Oxygen', sans-serif;
+
+	
+}
+.header{
+	background-color: rgba(0,0,0,0.5);
+	padding:15px 30px;
+	margin-bottom:10px;
+	color : white;
+}
+.add{
+	min-width: 600px;
+	border:2px solid yellow;
+}
+
+.add .addButton{
+	margin-top:20px;
+	width:40%;
+	
+}
+
+#divCard{
+	min-width: 600px;
+	background-color: #eee7ea;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	
+}
+#shopping-form{
+	text-align: center;
+	margin-top:20px;
+}
+#shoppingItem{
+	width:70%;
+	margin-left: 15%;
+}
+.list-group-item{
+	/******/
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: 'Acme', sans-serif;
+
+
+}
+.delete-item{
+	margin-left: 50px;
+	border:2px solid red;
+}
+.card h3{
+	font-family: 'Anton', sans-serif;
+}
+#search{
+	width:70%;
+	margin-left: 15%;
+	margin-bottom: 20px;
+}
+.clear-button{
+	width:40%;
+	margin-left: 30%;
+	margin-top: 20px;
+
+}
+
+.strike{
+	text-decoration : line-through;
+	color: green;
+}
+.btnStyle{
+	margin-left : 10px;
+
+}
+.delete-item{
+	margin:10px;
+}
+
+.list-group-item{
+	display : flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	border:2px solid red;
+}
+
+.list-group-item .btnStyle{
+	align-self: flex-end;
+}
+
+div.errorMessage{
+	color: red;
+	padding-top: 10px;
+}
+footer{
+	background-color: black;
+	margin-bottom: 0;
+	border: 1px solid black;
+	padding-top: 10px;
+	
+}
+.copyrightInfo{
+
+	color: rgba(255,255,255,0.4);
+}
