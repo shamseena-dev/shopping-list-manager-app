@@ -51,26 +51,31 @@ function addItem(e){
 		msg.style.display = 'none';
 		//create li element
 		const li=document.createElement('li');
-		console.log("else");
 		//Add class
-		li.className='list-group-item';
+		li.className='list-item';
 		//Create text node and append li
 		li.appendChild(document.createTextNode(listInput.value));
+		const div = document.createElement('div');
+
 		//create new button element
-		const link=document.createElement('button');
+		const btnDelete=document.createElement('button');
 		//Add Class to the button
-		link.className = 'delete-item btn btn-danger';
+		btnDelete.className = 'delete-item btn btn-danger';
 		//Add text 'Delete' to the button
-		link.innerHTML = 'Delete';
+		btnDelete.innerHTML = 'Delete';
 		//link.innerHTML='<i class="fa fa-remove removeIcon" title="Remove Item"></i>';
 		//create button "done" ,add class and text to it
 		const btnDone = document.createElement('button');
 		btnDone.className = 'btn done btn-success btnStyle';
 		btnDone.innerHTML = 'Done';
 
-		//Append link to li
-		li.appendChild(link);
-		li.appendChild(btnDone);
+		div.appendChild(btnDelete);
+		div.appendChild(btnDone);
+
+
+		//Append btnDelete to li
+		li.appendChild(div);
+		
 		//Append li to ul
 		shoppingList.appendChild(li);
 
@@ -89,29 +94,23 @@ function removeItem(e){
 		
 	} */
 	if(e.target.classList.contains("delete-item")){
-			e.target.parentElement.remove();
+			e.target.parentElement.parentElement.remove();
 		
 	} 
 }
 //Done item(when shopping is done)
 function doneItem(e){
-	console.log(e.target);
-		console.log(e.target.parentElement);
-
 	if(e.target.classList.contains("done")){
-		e.target.parentElement.classList.add('strike');
-		console.log(e.target.parentElement,"here");
+		e.target.parentElement.parentElement.classList.add('strike');
 		e.target.classList.remove('done');
 		e.target.classList.remove('btn-success');
 		e.target.classList.add('undo');
 		e.target.classList.add('btn-secondary');
-
 		e.target.innerHTML = "Undo";
 	
 	}
 	else if(e.target.classList.contains("undo")){
-		e.target.parentElement.classList.remove('strike');
-
+		e.target.parentElement.parentElement.classList.remove('strike');
 		e.target.classList.remove('undo');
 		e.target.classList.remove('btn-secondary');
 		e.target.classList.add('done');
@@ -134,8 +133,7 @@ function clearList(){
 
 function searchItem(e){
 	const text= e.target.value.toLowerCase();
-	document.querySelectorAll('.list-group-item').forEach(function(item){
-		console.log(item);
+	document.querySelectorAll('.list-item').forEach(function(item){
 		const eachItem=item.firstChild.textContent;
 		if(eachItem.toLowerCase().indexOf(text)!= -1){
 			item.style.display = 'block';

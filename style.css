@@ -43,13 +43,16 @@ body{
 	width:40%;
 	
 }
+.cardList{
 
+}
 #divCard{
-	min-width: 600px;
+	min-width: 500px;
 	background-color: #eee7ea;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
+	padding:20px;
 	
 }
 #shopping-form{
@@ -60,19 +63,30 @@ body{
 	width:70%;
 	margin-left: 15%;
 }
-.list-group-item{
-	/******/
+.list-item{
+	display: flex ;
+	flex-direction: row ;
+	justify-content: space-between;
+	font-family: 'Acme', sans-serif;
+	flex-wrap: wrap ;
+	padding:5px 10px 5px 20px;
+	align-items: center;
+}
+.list-group{
+	background-color: #4c7aa7;
+}
+.list-item div{
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	font-family: 'Acme', sans-serif;
-
-
+	justify-content: space-around;
+	
+	margin-left:10px;
+}
+.list-item div button{
+	margin-right: 5px;
 }
 .delete-item{
-	margin-left: 50px;
-	border:2px solid red;
+
 }
 .card h3{
 	font-family: 'Anton', sans-serif;
@@ -92,7 +106,9 @@ body{
 .strike{
 	text-decoration : line-through;
 	color: green;
+	background-color: grey;
 }
+/*
 .btnStyle{
 	margin-left : 10px;
 
@@ -110,7 +126,7 @@ body{
 
 .list-group-item .btnStyle{
 	align-self: flex-end;
-}
+} */
 
 div.errorMessage{
 	color: red;
