@@ -107,7 +107,6 @@ function doneItem(e){
 		e.target.classList.add('undo');
 		e.target.classList.add('btn-secondary');
 		e.target.innerHTML = "Undo";
-	
 	}
 	else if(e.target.classList.contains("undo")){
 		e.target.parentElement.parentElement.classList.remove('strike');

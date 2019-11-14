@@ -71,7 +71,7 @@ body{
 	flex-direction: row ;
 	justify-content: space-between;
 	font-family: 'Acme', sans-serif;
-	flex-wrap: wrap ;
+	flex-wrap: nowrap;
 	padding:5px 10px 5px 20px;
 	align-items: center;
 }
@@ -81,8 +81,7 @@ body{
 .list-item div{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	
+	justify-content: flex-end;
 	margin-left:10px;
 }
 .list-item div button{
@@ -107,8 +106,7 @@ body{
 }
 
 .strike{
-	text-decoration : line-through;
-	color: green;
+	color: white;
 	background-color: grey;
 }
 /*
@@ -180,6 +178,6 @@ footer{
    	    min-width: 80vw;
    }
    #divCard{
-	    min-width: 80vw;
+	    min-width: 70vw;
 	}
 }
