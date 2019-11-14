@@ -172,3 +172,14 @@ footer{
 		font-size: 15px;
 	}
 }
+@media only screen and (max-width: 1000px){
+   .header p{
+   		font-size: 16px;
+   }
+   .add{
+   	    min-width: 80vw;
+   }
+   #divCard{
+	    min-width: 80vw;
+	}
+}
