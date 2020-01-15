@@ -12,6 +12,8 @@
 
 ## Event Handlers 
 
+## Responsive
+
 ## Interactive
 
 ## Dynamic
