@@ -75,6 +75,16 @@ body{
 	padding:5px 10px 5px 20px;
 	align-items: center;
 }
+.search-display{
+	display: flex ;
+	flex-direction: row ;
+	justify-content: space-between;
+	font-family: 'Acme', sans-serif;
+	flex-wrap: nowrap;
+	padding:5px 10px 5px 20px;
+	align-items: center;
+
+}
 .list-group{
 	background-color: #4c7aa7;
 }

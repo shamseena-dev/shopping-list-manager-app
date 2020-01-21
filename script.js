@@ -73,7 +73,7 @@ function addItem(e){
 		div.appendChild(btnDone);
 
 
-		//Append btnDelete to li
+		//Append div to li
 		li.appendChild(div);
 		
 		//Append li to ul
@@ -131,15 +131,17 @@ function clearList(){
 //Search/filter item
 
 function searchItem(e){
+	
 	const text= e.target.value.toLowerCase();
 	document.querySelectorAll('.list-item').forEach(function(item){
 		const eachItem=item.firstChild.textContent;
 		if(eachItem.toLowerCase().indexOf(text)!= -1){
-			item.style.display = 'block';
+			item.style.visibility = 'visible';
 		}
 		else{
-			item.style.display = 'none';
+			item.style.visibility = 'hidden';
 		}
 	});
+    
 
 }
