@@ -75,16 +75,7 @@ body{
 	padding:5px 10px 5px 20px;
 	align-items: center;
 }
-.search-display{
-	display: flex ;
-	flex-direction: row ;
-	justify-content: space-between;
-	font-family: 'Acme', sans-serif;
-	flex-wrap: nowrap;
-	padding:5px 10px 5px 20px;
-	align-items: center;
 
-}
 .list-group{
 	background-color: #4c7aa7;
 }
@@ -148,7 +139,13 @@ footer{
 	margin-bottom: 0;
 	border: 1px solid black;
 	padding-top: 10px;
+	position:fixed;
+	bottom: 0;
+	width:100%;
 	
+}
+.copyright{
+	margin-bottom: 0;
 }
 .copyrightInfo{
 
